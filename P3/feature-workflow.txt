@@ -1,0 +1,15 @@
+P3 - Feature Branch Git Workflow
+
+1. Created a new feature branch.
+2. Made changes in the feature branch.
+3. Added and committed the changes.
+4. Merged the feature branch into main.
+5. Pushed the changes to GitHub.
+
+Git commands learned:
+- git branch
+- git switch
+- git add
+- git commit
+- git merge
+- git push
