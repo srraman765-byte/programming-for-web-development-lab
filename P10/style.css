@@ -1,0 +1,156 @@
+
+/* P10 - Portfolio Header and Footer with Advanced Flexbox */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Advanced Flexbox Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 25px 5%;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #bfdbfe;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #facc15;
+}
+
+/* Header Button */
+.header-button {
+    background-color: #facc15;
+    color: #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+/* Advanced Flexbox Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 35px 5%;
+}
+
+.footer-brand h2 {
+    margin-bottom: 8px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #facc15;
+}
+
+.footer-bottom {
+    flex-basis: 100%;
+    text-align: center;
+    border-top: 1px solid #64748b;
+    padding-top: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-social {
+        justify-content: center;
+    }
+}
